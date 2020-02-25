@@ -18,13 +18,13 @@
     <meta name="keywords" content="Payments, Payment Processing, Live Streaming, ETC Dapps,Ethereum Classic, ETC, Universal Basic Income Dapp, UBI Dapp, UBI Ethereum, Universal Basic income Ethereum, Employment Insurance, Blockchain Insurance, Coops, Cooperative, Blockchain, Blockchain Technology">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="google-site-verification" content="WrgQBpU2wJGTSp9LZ9NFYn6p_NxgSB95ocpo39Dcydg" />
-    <link rel="stylesheet" href="css/semantic.min.css">
-    <link rel="stylesheet" href="css/alertify.min.css" />
-    <link rel="stylesheet" href="css/themes/default.min.css" />
-    <link rel="stylesheet" href="css/themes/semantic.min.css" />
-    <link rel="stylesheet" href="css/themes/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://commonwealth.gg/css/semantic.min.css">
+    <link rel="stylesheet" href="https://commonwealth.gg/css/alertify.min.css" />
+    <link rel="stylesheet" href="https://commonwealth.gg/css/themes/default.min.css" />
+    <link rel="stylesheet" href="https://commonwealth.gg/css/themes/semantic.min.css" />
+    <link rel="stylesheet" href="https://commonwealth.gg/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://commonwealth.gg/css/main.css">
+    <link rel="stylesheet" href="https://commonwealth.gg/css/custom.css">
     <link rel="icon" type="image" href="img/whale.ico">
     <!-- GA -->
     <meta name="google-site-verification" content="ZDl3q34Gq9Ct8J5T4o7FxNohH0fHqnGFAv4pZCoftos" />
@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    <div class="pusher chart-background">
+    <div class="pusher">
         <div class="cityscape">
             <div class="ui large inverted stackable menu gradient"
                 style="border-radius:0px !important; margin-bottom: 0px; background: rgba(0, 0, 0, .6) !important;">
@@ -61,17 +61,17 @@
                             <h2 class="title">Commonwealth</h2>
                         </a>
                         <div id="myLinks">
-                            <a class="item" href="/index.html">
-                                <strong>Home</strong>
-                            </a>
                             <a class="item" href="/use.html">
-                                <strong>Wallet</strong>
+                                <strong>Кошелек</strong>
                             </a>
                             <a class="item" href="/games.html">
-                                <strong>Games</strong>
+                                <strong>Игры</strong>
                             </a>
                             <a class="item" href="/info.html">
-                                <strong>Info</strong>
+                                <strong>Инфо</strong>
+                            </a>
+                            <a class="item" href="/chart.html">
+                                <strong>Чарт</strong>
                             </a>
                         </div>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="padding-bottom: 100%;">
@@ -85,29 +85,29 @@
                         <h2 class="title">Commonwealth</h2>
                     </a>
                     <div class="custom-computer only right menu">
-                        <a class="item" href="/index.html">
-                            <strong>
-                                Home
-                            </strong>
-                        </a>
                         <a class="item" href="/use.html">
                             <strong>
-                                Wallet
+                                Кошелек
                             </strong>
                         </a>
                         <a class="item" href="/games.html">
                             <strong>
-                                Games
+                                Игры
                             </strong>
                         </a>
                         <a class="item" href="/info.html">
                             <strong>
-                                Info
+                                Инфо
+                            </strong>
+                        </a>
+                        <a class="item" href="/chart.html">
+                            <strong>
+                                Чарт
                             </strong>
                         </a>
                     </div>
                     <!-- COMPUTER MENU END -->
-                </div>
+                    </div>
             </div>
         </div>
         <div class="ui container vertical stripe">
@@ -117,7 +117,7 @@
                     <div class="column" style="padding-bottom: 0px !important; padding-top: 5px !important;">
                         <div id="sizeStats" class="ui segments">
                             <div class="ui segment">
-                                <h4 class="stats">Vault: <span
+                                <h4 class="stats">Банк: <span
                                         id="sizeETC"></span> (<span id="sizeUSD"></span>)</h4>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
                     <div class="column" style="padding-bottom: 0px !important; padding-top: 5px !important;">
                         <div id="priceStats" class="ui segments">
                             <div class="ui segment">
-                                <h4 class="stats"><i class="chart line circle icon stats"></i>Point Price:
+                                <h4 class="stats"><i class="chart line circle icon stats"></i>Цена Point:
                                     <span>
                                     <span id="priceUSD"></span>
                                 </h4>
@@ -135,7 +135,7 @@
                     <div class="column" style="padding-bottom: 0px !important; padding-top: 5px !important;">
                         <div id="createdStats" class="ui segments">
                             <div class="ui segment">
-                                <h4 class="stats"><i class="globe line circle icon stats"></i>Total Points: <span
+                                <h4 class="stats"><i class="globe line circle icon stats"></i>Всего Point: <span
                                         id="tokenSupply"></span></h4>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                     <div class="column" style="padding-bottom: 0px !important; padding-top: 5px !important;">
                             <div id="createdStats" class="ui segments">
                                 <div class="ui segment">
-                                    <h4 class="stats"><i class="ethereum line circle icon stats"></i>ETC Price: $<span
+                                    <h4 class="stats"><i class="ethereum line circle icon stats"></i>Цена ETC: $<span
                                             id="etcPriceUSD"></span></h4>
                                 </div>
                             </div>
@@ -153,23 +153,23 @@
             <div class="ui masthead vertical center aligned segment"  style="margin-top: 5px;">
                     <div class="ui segment" style="padding-bottom: 5px;">
                     <h4 class="ui header" style="text-align: left;">
-                        <b>Point Price</b><span class="ui green text small">&nbsp;| Updated Daily</span>
+                        <b>График цены Point</b><span class="ui green text small">&nbsp;| Обновляется ежедневно</span>
                     </h4>
                     <svg id="container"></svg>
-                    <a href="https://www.xenobank.com/" target="_blank" style="font-size:10px; ">(More Data Available at Xenobank.com)</a>
+                    <a href="https://www.xenobank.com/" target="_blank" style="font-size:10px; ">(Больше данных на Xenobank.com)</a>
             </div>
         </div>
         <div style="text-align:center; margin-bottom: 10px;">
             <a id="buyETCButton" class="ui left labeled icon large green button"
             style="margin-top: 15px; margin-bottom: 5px;">
             <i class="left ethereum icon"></i>
-                Need to buy ETC?
+                Нужно купить ETC?
             </a>
         </div>
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"  style="color: black !important;">Ticker Tape by TradingView</a></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
         {
         "symbols": [
@@ -354,7 +354,7 @@
                             <div id="sizeStats" class="ui segments">
                                 <a href="https://youtu.be/PuQBHfKVF2I" target="_blank">
                                 <div class="ui segment">
-                                    <h4 style="margin-bottom: 0px;">Start Using Commonwealth from your Phone<i class="right arrow icon"></i></h4>
+                                    <h4 style="margin-bottom: 0px;">Начните использовать со своего телефона<i class="right arrow icon"></i></h4>
                                     <img class="logo mobile only" style="height: 75%" src="/img/landing/phone.png" alt="Phoenix">
                                     <img class="logo custom-computer only" src="/img/landing/phone.png" alt="Phoenix">
                                 </div>
@@ -365,14 +365,15 @@
             </div>
             </div>
         </div>
-        <div class="ui inverted vertical footer segment gradient personal ">
+        <br>
+        <div class="ui inverted vertical footer segment gradient personal">
             <div class="ui container">
                 <div class="ui stackable inverted divided equal height stackable grid">
                     <div class="three wide column">
                         <div class="ui inverted link list">
-                            <a class="item" href="/">Home</a>
-                            <a class="dashboard-link item" href="/use.html">Wallet</a>
-                            <a href="/chart.html" class="item">Chart</a>
+                            <a class="item" href="/">Главная</a>
+                            <a class="dashboard-link item" href="/use.html">Кошелек</a>
+                            <a href="/chart.html" class="item">Чарт</a>
                             <a href="/commonwealth.pdf" target="_blank" class="item">White Paper</a>
                             <a href="https://github.com/p3c-bot/p3c-bot.github.io" target="_blank" class="item"><i class="github icon"></i>Github</a>
                         </div>
@@ -381,41 +382,32 @@
                         <div class="ui inverted link list" style="margin-top:0px;">
                             <a href="https://discord.gg/crjsdJr" target="_blank" class="item"><i class="left discord icon"></i>Discord Chat</a>
                             <a href="https://twitter.com/commonwealthgg" target="_blank" class="item">Twitter</a>
-                            <a href="https://medium.com/@masterhax/" target="_blank" class="item">Blog</a>
+                            <a href="https://medium.com/@masterhax/" target="_blank" class="item">Блог</a>
                             <a href="/commonwealth.pdf" target="_blank" class="item">White Paper</a>
                             <a href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts" target="_blank" class="item">Smart Contract</a>
-                            <a href="https://github.com/p3c-bot/api/blob/master/README.md" target="_blank"class="item">API Docs</a>
+                            <a href="https://github.com/p3c-bot/api/blob/master/README.md" target="_blank"class="item">API документация</a>
                         </div>
                     </div>
                     <div class="ten wide column">
-                        <h5 class="ui inverted header">Disclaimer</h5>
-                        <p class="instruction disclaimer">
-                            This project is experimental. Do not send any <span class="notranslate">ETC</span> you
-                            cannot
-                            afford to
-                            lose. There is zero guarantee
-                            that you will make <span class="notranslate">ETC</span>. This is very new technology and we
-                            kindly ask
-                            anyone who doesn't grasp the risks inherent to Blockchain technology to not participate in
-                            Commonwealth. The
-                            contract is running <a style="color: orange;" target="_blank"
-                                href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts">here</a>
-                            and cannot be changed. Don't trust, verify.
+                        <h5 class="ui inverted header">Предупреждение!</h5>
+                        <p class="instruction disclaimer">Данный проект является эксперементальным. Это совершенно новая технология и мы просим всех, кто не понимает риски присущие технологии blockchain не принимать участие в проекте Commonwealth. Не отправляйте ETC, если не можете позволить потерю. Существует нулевая гарантия на возврат или умножение ETC. Контракт не изменнен. Не доверяйте, просто
+                            <span class="notranslate"></span><span class="notranslate"></span>
+                            <a style="color: orange;" target="_blank" href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts"> проверьте.</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/semantic.min.js"></script>
-    <script src="js/lodash.min.js"></script>
-    <script src="js/d3.v5.min.js"></script>
-    <script src="js/alertify.min.js"></script>
+    <script src="https://commonwealth.gg/js/jquery.min.js"></script>
+    <script src="https://commonwealth.gg/js/semantic.min.js"></script>
+    <script src="https://commonwealth.gg/js/lodash.min.js"></script>
+    <script src="https://commonwealth.gg/js/d3.v5.min.js"></script>
+    <script src="https://commonwealth.gg/js/alertify.min.js"></script>
 
-    <script src="lib/util.js"></script>
-    <script src="lib/home.js"></script>
-    <script src="lib/charts.js"></script>
+    <script src="https://commonwealth.gg/lib/util.js"></script>
+    <script src="https://commonwealth.gg/lib/charts.js"></script>
+    <script src="https://commonwealth.gg/lib/home.js"></script>
     <script>drawChart();</script>
 </body>
 

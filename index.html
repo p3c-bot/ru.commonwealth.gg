@@ -16,13 +16,13 @@
         <meta name="keywords" content="Payments, Payment Processing, Live Streaming, ETC Dapps,Ethereum Classic, ETC, Universal Basic Income Dapp, UBI Dapp, UBI Ethereum, Universal Basic income Ethereum, Employment Insurance, Blockchain Insurance, Coops, Cooperative, Blockchain, Blockchain Technology">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <meta name="google-site-verification" content="WrgQBpU2wJGTSp9LZ9NFYn6p_NxgSB95ocpo39Dcydg" />
-        <link rel="stylesheet" href="css/semantic.min.css">
+        <link rel="stylesheet" href="https://commonwealth.gg/css/semantic.min.css">
         <!-- Default theme -->
-        <link rel="stylesheet" href="css/themes/default.min.css" />
+        <link rel="stylesheet" href="https://commonwealth.gg/css/themes/default.min.css" />
         <!-- Semantic UI theme -->
-        <link rel="stylesheet" href="css/themes/semantic.min.css" />
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="https://commonwealth.gg/css/themes/semantic.min.css" />
+        <link rel="stylesheet" href="https://commonwealth.gg/css/main.css">
+        <link rel="stylesheet" href="https://commonwealth.gg/css/custom.css">
         <link rel="icon" type="image" href="img/whale.ico">
         <!-- GA -->
         <meta name="google-site-verification" content="ZDl3q34Gq9Ct8J5T4o7FxNohH0fHqnGFAv4pZCoftos" />
@@ -49,16 +49,48 @@
 <body>
     <div class="pusher">
         <div class="cityscape">
-            <div class="ui large inverted stackable menu gradient" style="border-radius:0px !important; margin-bottom: 0px; background: rgba(0, 0, 0, .6) !important;">
+            <div class="ui large inverted stackable menu gradient"
+                style="border-radius:0px !important; margin-bottom: 0px; background: rgba(0, 0, 0, .6) !important;">
                 <div class="ui container">
-                    <a class="header item">
-                        <img src="img/whale.svg" class="ui mini image home" />
-                        <h2 class="title home">Commonwealth</h2>
+                    <!-- MOBILE MENU START  -->
+                    <span class="mobile only topnav ui large inverted stackable menu gradient">
+                        <a class="header item" href="/">
+                            <img src="img/whale.svg" class="ui mini image" />
+                            <h2 class="title">Commonwealth</h2>
+                        </a>
+                        <div id="myLinks">
+                            <a class="item" href="/use.html">
+                                <strong>Кошелек</strong>
+                            </a>
+                            <a class="item" href="/games.html">
+                                <strong>Игры</strong>
+                            </a>
+                            <a class="item" href="/info.html">
+                                <strong>Инфо</strong>
+                            </a>
+                            <a class="item" href="/chart.html">
+                                <strong>Чарт</strong>
+                            </a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="padding-bottom: 100%;">
+                          <i class="bars icon"></i>
+                        </a>
+                    </span>
+                    <!-- MOBILE MENU END -->
+                    <!-- COMPUTER MEMU START -->
+                    <a class="custom-computer only header item" href="/">
+                        <img src="img/whale.svg" class="ui mini image" />
+                        <h2 class="title">Commonwealth</h2>
                     </a>
                     <div class="custom-computer only right menu">
-                        <a class="item" href="/use_ru.html">
+                        <a class="item" href="/use.html">
                             <strong>
                                 Кошелек
+                            </strong>
+                        </a>
+                        <a class="item" href="/games.html">
+                            <strong>
+                                Игры
                             </strong>
                         </a>
                         <a class="item" href="/info.html">
@@ -66,12 +98,13 @@
                                 Инфо
                             </strong>
                         </a>
-                        <a class="item" href="/chart_ru.html">
+                        <a class="item" href="/chart.html">
                             <strong>
                                 Чарт
                             </strong>
                         </a>
                     </div>
+                    <!-- COMPUTER MENU END -->
                 </div>
             </div>
             <div class="ui masthead vertical center aligned segment ">
@@ -79,12 +112,15 @@
                     <!-- <img width="250" height="250" class="logo custom-computer only" loop="" src="/img/diamond.gif" alt="Diamond">
                 <img width="50%" height="50%" class="logo mobile only" src="/img/diamond.gif" alt="Diamond"> -->
                     <h3 class="bg-text mobile only" style="margin-top:50px;"></h3>
-                    <h1 class="bg-text custom-computer only" style="margin-top: 325px;"><i>Фонд мировых сбережений</i>
+                    <h1 class="bg-text custom-computer only" style="margin-top: 325px;">Фонд мировых сбережений</i>
                     </h1>
-                    <a href="/use_ru.html" class="dashboard-link ui huge primary opacity-dark" style="margin-bottom: 10px; color: white;">Кошелек
+                    <a href="/use.html" class="dashboard-link ui huge primary opacity-dark"
+                        style="margin-bottom: 10px; color: white;">Кошелек
                         <i class="right arrow icon"></i>
                     </a>
-                    <a href="/chart_ru.html" class="ui huge primary opacity-dark" style="margin-bottom: 10px; color: white;">Обзор рынка
+                    <a href="/chart.html" class="ui huge primary opacity-dark"
+                    style="margin-bottom: 10px; color: white;">Обзор рынка
+                    <i class="university icon"></i>
                     </a>
                 </div>
             </div>
@@ -106,7 +142,7 @@
                     <div class="column" style="padding-bottom: 0px !important;">
                         <div id="priceStats" class="ui segments">
                             <div class="ui segment">
-                                <a href="/chart_ru.html" style="color:rgba(0, 0, 0, .7)">
+                                <a href="/chart.html" style="color:rgba(0, 0, 0, .7)">
                                 <h4 class="stats"><i class="chart line circle icon stats"></i>Цена Point:
                                     <span id="priceUSD"></span></h4>
                                 </a>
@@ -135,7 +171,7 @@
                             </div>
                             <h2 class="feature-title">Transparent</h2>
                             <hr class="line">
-                            <img class="logo" src="./img/vault.jpg" alt="Phoenix">
+                            <img class="logo" src="/img/vault.jpg" alt="Phoenix">
                             <h3 style="margin-top:10px;">Мы используем смарт контракт, как безопасное хранилище мировых сбережений</h3>
                         </div>
                         <div class="column" style="padding-top: 0px;">
@@ -144,7 +180,7 @@
                             </div>
                             <h2 class="feature-title">Money</h2>
                             <hr class="line">
-                            <img class="logo mobile only" src="./img/earth.png" alt="Phoenix">
+                            <img class="logo mobile only" src="/img/earth.png" alt="Phoenix">
                             <img class="logo custom-computer only" src="./img/earth-small.png" alt="Phoenix">
                             <h3 style="margin-top:10px;">Смарт контрактом предусмотрены справедливые начисления дивидендов за использовние системы</h3>
                         </div>
@@ -154,7 +190,7 @@
                             </div>
                             <h2 class="feature-title">Forever</h2>
                             <hr class="line">
-                            <img class="logo" style="width: 100%" src="./img/team.jpg" alt="Phoenix">
+                            <img class="logo" style="width: 100%" src="/img/team.jpg" alt="Phoenix">
                             <h3 style="margin-top:10px;">Глобальный масштаб платформы представляет удобность и доступность финансовых инструментов для всех</h3>
                         </div>
                     </div>
@@ -169,7 +205,7 @@
                 <i class="left comments icon"></i>
                 Присоедениться к чату
             </a>
-            <a id="whitepaper" href="/commonwealth_ru.pdf" class="ui left labeled icon large blue button" style="margin-top: 15px; margin-bottom: 5px;">
+            <a id="whitepaper" href="/commonwealth.pdf" class="ui left labeled icon large blue button" style="margin-top: 15px; margin-bottom: 5px;">
             <i class="left paper plane icon"></i>
             Читать Whitepaper
             </a>
@@ -221,7 +257,7 @@
                         <div class="center aligned row">
                                 <div class="column" style="padding-bottom: 0px !important;">
                                         <div class="ui segments">
-                                            <a href="/use_ru.html">
+                                            <a href="/use.html">
                                                 <div class="ui segment">
                                                         <h4>Зачем использовать Commonwealth?<i class="right arrow icon"></i></h4>
                                                         <li style="text-align: left; margin-bottom: 10px;">
@@ -250,7 +286,7 @@
                                     </div>
                                     <div class="column" style="padding-bottom: 0px !important;">
                                         <div class="ui segments">
-                                            <a href="/chart_ru.html">
+                                            <a href="/chart.html">
                                                 <div class="ui segment">
                                                         <h4>Как Commonwealth выплачивает дивиденды?<i class="right arrow icon"></i></h4>
                                                         <ul>
@@ -291,9 +327,9 @@
                     <div class="three wide column">
                         <div class="ui inverted link list">
                             <a class="item" href="/ru.html">Главная</a>
-                            <a class="dashboard-link item" href="/use_ru.html">Кошелек</a>
-                            <a href="/chart_ru.html" class="item">Чарт</a>
-                            <a href="/commonwealth_ru.pdf" target="_blank" class="item">White Paper</a>
+                            <a class="dashboard-link item" href="/use.html">Кошелек</a>
+                            <a href="/chart.html" class="item">Чарт</a>
+                            <a href="/commonwealth.pdf" target="_blank" class="item">White Paper</a>
                             <a href="https://github.com/p3c-bot/p3c-bot.github.io" target="_blank" class="item"><i class="github icon"></i>Github</a>
                         </div>
                     </div>
@@ -315,12 +351,12 @@
             </div>
         </div>
     
-        <script src="js/jquery.min.js"></script>
-        <script src="js/semantic.min.js"></script>
-        <script src="js/lodash.min.js"></script>
+        <script src="https://commonwealth.gg/js/jquery.min.js"></script>
+        <script src="https://commonwealth.gg/js/semantic.min.js"></script>
+        <script src="https://commonwealth.gg/js/lodash.min.js"></script>
         
-        <script src="lib/util.js"></script>
-        <script src="lib/home.js"></script>
+        <script src="https://commonwealth.gg/lib/util.js"></script>
+        <script src="https://commonwealth.gg/lib/home.js"></script>
 
 
 <widgetbot-crate src="https://widgetbot.io" docs="docs.widgetbot.io"><crate><shadow-root classname="resolved"></shadow-root></crate></widgetbot-crate></body></html>
