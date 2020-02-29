@@ -36,13 +36,13 @@
         <div class="ui container">
             <div class="header">
                 <a class="item" href="/">
-                    <img id="logo" src="img/etc-logo-alt.png" class="ui mini image" style="max-width: 15%" />
+                    <img id="logo" src="img/etc-logo-alt.png" class="ui mini image" style="max-width: 15%">
                     <h2 class="title" style="color: black;">Commonwealth Pure</h2>
                     <div class="opacity mobile only">
                         <strong>
                             <i class="chess rook icon"></i>
                         </strong>
-                        <span id="etcInContract">0</span>
+                        10,143 ETC
                     </div>
                 </a>
             </div>
@@ -51,24 +51,21 @@
                 <div class="item">
                     <a href="/index.html">
                         <div class="opacity" style="color: black;">
-                            <strong>Home
+                            <strong>Главная
                             </strong>
                         </div>
                     </a>
                     <a href="/chart.html" style="color: black;">
                         <div class="opacity">
-                            <strong>Chart
-                            </strong>
+                            <strong>Чарт</strong>
                         </div>
                     </a>
-                    <a href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts"
-                    target="_blank">
+                    <a href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts" target="_blank">
                     <div class="opacity notranslate" style="color: black;">
                         <strong>
                             <i class="chess rook icon"></i>
                         </strong>
-                        Vault: <span id="etcInContract">0 ETC</span>
-                    </div>
+                        Банк: </div>
                     </a>
                 </div>
             </div>
@@ -83,48 +80,48 @@
 
                     <div class="ui padded center aligned segment" id="myTokens">
                         <h2 class="ui header">
-                            My Balance
+                            Баланс
                             <div class="sub header pure-holdings">
-                                 <span id="myCropTokens"></span> Points<span class="custom-computer only"> / <span id="myETCValue" class="notranslate" style="font-weight:bold;"></span> ETC</span>
+                                 <b id="myCropTokens" class="" style="">1.00</b> Points<span class="custom-computer only"> / <span id="myETCValue" class="notranslate" style="font-weight:bold;">0.0</span> ETC</span>
                             </div>
                         </h2>
                     </div>
                     <div class="ui padded center aligned segment" id="myDividends">
                         <h2 class="ui header">
-                            My Dividends
+                            Дивиденды
                             <div class="sub header pure-holdings">
-                                <span id="myCropDividends" class=""></span>  ETC
+                                <b id="myCropDividends" class="" style="">0.00057956</b>  ETC
                             </div>
                         </h2>
                     </div>
                 </div>
                 <div class="ui two column centered grid">
                     <div class="column smallpad-left">
-                        <button id="reinvest" class="ui orange fluid button large" style="padding-left: 0px; padding-right: 0px;"><i class="recycle icon"></i>Compound Dividends</button>
+                        <button id="reinvest" class="ui orange fluid button large" style="padding-left: 0px; padding-right: 0px;"><i class="recycle icon"></i>Конвертировать дивиденды</button>
                     </div>
                     <div class="column smallpad-right">
-                        <button id="withdraw" class="ui orange fluid button large"><i class="money bill alternate  icon"></i>Take Dividends</button>
+                        <button id="withdraw" class="ui orange fluid button large"><i class="money bill alternate  icon"></i>Получить дивиденды</button>
                     </div>
                 </div>
                 <br>
-                <a href="https://flux.arcadium.network/">(Want more? Try out Flux  Wallet)</a>
+                <a href="https://flux.arcadium.network/">(Попробуйте Flux кошелек)</a>
             </div>
             <div class="four wide column buy" id="buyArea">
                 <h2 class="ui header">
-                    <img src="img/time-forward.svg" class="width one and eight" />
+                    <img src="img/time-forward.svg" class="width one and eight">
                     <div class="content">
-                        <span>Buy</span>
+                        <span>Купить</span>
                     </div>
                 </h2>
 
                 <div class="ui fluid large basic buttons" style="margin-bottom:10px;">
                     <div class="ui button price no click">
-                        <strong>Price</strong>
+                        <strong>Цена</strong>
                     </div>
 
                     <div class="ui positive button price no click">
                         <strong>
-                            <span class="buy-price" id="tokenBuyGet">0.0000</span>
+                            <span class="buy-price" id="tokenBuyGet">0.0155 ETC</span>
                         </strong>
                     </div>
                 </div>
@@ -136,28 +133,28 @@
                     </div>
                 </div>
                 <button id="buy" class="ui large fluid green button" style="margin-top:10px;">
-                    Buy Points
+                    Купить Point
                 </button>
-                <div id="buyAmount" class="ui fluid large basic green button approx no click buy-amount">
+                <div id="buyAmount" class="ui fluid large basic green button approx no click buy-amount" style="display: none;">
                     <i>How much will you buy?</i>
                 </div>
             </div>
             <div class="four wide column sell">
                 <h2 class="ui header">
-                    <img src="img/time-backward.svg" class="width one and eight" />
+                    <img src="img/time-backward.svg" class="width one and eight">
                     <div class="content">
-                        <span>Sell</span>
+                        <span>Продать</span>
                     </div>
                 </h2>
 
                 <div class="ui fluid large basic buttons" style="margin-bottom:10px;">
                     <div class="ui button price no click">
-                        <strong>Price</strong>
+                        <strong>Цена</strong>
                     </div>
 
                     <div class="ui button price no click">
                         <strong>
-                            <span class="buy-price" id="tokenSellGet">0.00</span>
+                            <span class="buy-price" id="tokenSellGet">0.0127 ETC</span>
                         </strong>
                     </div>
                 </div>
@@ -171,9 +168,9 @@
                     </span>
                 </div>
                 <button id="sell" class="ui large fluid blue button" style="margin-top:10px;">
-                    Sell Points
+                    Продать Point
                 </button>
-                <div id="sellAmount" class="ui fluid large basic blue button no click approx" style="margin-top:10px;">
+                <div id="sellAmount" class="ui fluid large basic blue button no click approx" style="margin-top: 10px; display: none;">
                     <i>How much will you sell?</i>
                 </div>
             </div>
@@ -183,38 +180,33 @@
         <div class="ui stackable grid">
             <div class="eight wide column">
                 <div style="text-align: center">
-                    <a href="https://discord.gg/crjsdJr" target="_blank" class="ui left labeled icon large fluid green button"
-                        style="margin-bottom:10px;">
-                        <i class="left discord icon"></i>
-                        Need Help? Chat now.
-                    </a>
+                    <a href="https://discord.gg/crjsdJr" target="_blank" class="ui left labeled icon large fluid green button" style="margin-bottom:10px;">
+                        <i class="left discord icon"></i>Чтобы задать вопрос присоеденитесь к чату</a>
                 </div>
                 <div id="masternode" class="ui segments masternode hidden">
                     <div class="ui segment" style="text-align: left;">
-                        <p>API Key:
-                            <strong>33%</strong> of the community fee (3% of total) to link creator when Points is bought with link. <b>Must have 1 Point to be active.</b> <a href="https://medium.com/@masterhax/how-do-referral-links-work-in-p3c-13c8242fd9d9" target="_blank">Learn more.</a>
+                        <p><b>API Key:</b>
+                            <i>Реферал получает больше дивидендных выплат если кто-то совершает покупку поинтов по его ссылке (33% от общих дивидендных распределений и 3% от общей суммы покупки). <b>Для активации Pure кошелька необходим минимум 1 поинт.</b></i> <a href="https://medium.com/@masterhax/how-do-referral-links-work-in-p3c-13c8242fd9d9" target="_blank">Узнать больше.</a>
                         </p>
                     </div>
                     <div class="ui secondary segment">
                         <div class="link masternode">
-                            <a id="masternodeLink" href="/?ref=0x">https://commonwealth.gg/index.html?ref=0x123456</a> <button id="copyMNButton" class="ui primary basic button copy" data-clipboard-text="">
+                            <a id="masternodeLink" href="/?ref=0xaa499E2595397CfA988c573fE8837A3767ea303E">https://commonwealth.gg/index.html?ref=0xaa499E2595397CfA988c573fE8837A3767ea303E</a> <button id="copyMNButton" class="ui primary basic button copy" data-clipboard-text="https://commonwealth.gg/index.html?ref=0xaa499E2595397CfA988c573fE8837A3767ea303E">
                             <i class="copy icon"></i>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div style="text-align: center">
-                    <a id="rainMaker" class="ui left labeled icon large fluid white button"
-                        style="margin-bottom:10px;">
+                    <a id="rainMaker" class="ui left labeled icon large fluid white button" style="margin-bottom:10px;">
                         <i class="left chart line icon"></i>
-                        Activate RainMaker <span class="ui green text small eleven">|  <span id="rainMakerTokens"></span> Points / Divs: <span id="rainMakerDividends"></span> ETC</span>
+                        Активировать RainMaker <span class="ui green text small eleven">|  <span id="rainMakerTokens">62,382.9</span> Points / Divs: <span id="rainMakerDividends">0.002</span> ETC</span>
                     </a>
                 </div>
                 <div style="text-align: center">
-                    <a id="distribute" class="ui left labeled icon large fluid white button"
-                        style="margin-bottom:10px;">
+                    <a id="distribute" class="ui left labeled icon large fluid white button" style="margin-bottom:10px;">
                         <i class="left sitemap icon"></i>
-                        Split Divies <span class="ui green text small eleven">|  <span id="diviesBalance"></span> ETC</span> 
+                        Распределение дивидендов <span class="ui green text small eleven">|  <span id="diviesBalance">0.000</span> ETC</span> 
                     </a>
                 </div>
             </div>
@@ -224,13 +216,13 @@
                                 <h4 class="ui header">
                                     <i class="circular inverted orange exchange alternate icon"></i>
                                     <div class="content">
-                                        <div class="sub header"><b>Transfer Points</b>. <i>Send to another crop or pure ETC address.</i></div>
+                                        <div class="sub header"><b>Transfer Points</b>. <i>Только на Pure(см. ниже) или </i>
+<a href="https://ru.commonwealth.gg/use.html" target="_blank">crop-address.</a></div>
                                     </div>
                                 </h4>
                             </div>
                             <div class="ui segment notranslate">
-                                <b>Pure Address:</b> <span id="myCropAddress" class="approx"></span> <button id="copyAddressButton"
-                                    class="ui primary basic button copy" data-clipboard-text="">
+                                <b>Pure Address:</b> <b id="myCropAddress" class="cropAddress">0xaa499E2595397CfA988c573fE8837A3767ea303E</b> <button id="copyAddressButton" class="ui primary basic button copy" data-clipboard-text="0xaa499E2595397CfA988c573fE8837A3767ea303E">
                                     <i class="copy icon"></i>
                                 </button>
                             </div>
@@ -252,7 +244,7 @@
                             <div class="ui segment">
                                 <button id="transfer" class="ui right labeled large icon orange fluid button">
                                     <i class="right arrow icon"></i>
-                                    Transfer
+                                    Отправить
                                 </button>
                             </div>
                         </div>
@@ -265,9 +257,9 @@
             <div class="ui stackable inverted divided equal height stackable grid">
                 <div class="three wide column">
                     <div class="ui inverted link list">
-                        <a class="item" href="/">Home</a>
-                        <a class="dashboard-link item" href="/use.html">Wallet</a>
-                        <a href="/chart.html" class="item">Chart</a>
+                        <a class="item" href="/">Главная</a>
+                        <a class="dashboard-link item" href="/use.html">Кошелек</a>
+                        <a href="/chart.html" class="item">Чарт</a>
                         <a href="/commonwealth.pdf" target="_blank" class="item">White Paper</a>
                         <a href="https://github.com/p3c-bot/p3c-bot.github.io" target="_blank" class="item"><i class="github icon"></i>Github</a>
                     </div>
@@ -276,25 +268,15 @@
                     <div class="ui inverted link list" style="margin-top:0px;">
                         <a href="https://discord.gg/crjsdJr" target="_blank" class="item"><i class="left discord icon"></i>Discord Chat</a>
                         <a href="https://twitter.com/commonwealthgg" target="_blank" class="item">Twitter</a>
-                        <a href="https://medium.com/@masterhax/" target="_blank" class="item">Blog</a>
-                        <a href="/commonwealth.pdf" target="_blank" class="item">White Paper</a>
+                        <a href="https://medium.com/@masterhax/" target="_blank" class="item">Блог</a>
+                        
                         <a href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts" target="_blank" class="item">Smart Contract</a>
-                        <a href="https://github.com/p3c-bot/api/blob/master/README.md" target="_blank"class="item">API Docs</a>
+                        <a href="https://github.com/p3c-bot/api/blob/master/README.md" target="_blank" class="item">API документация</a>
                     </div>
                 </div>
                 <div class="ten wide column">
-                    <h5 class="ui inverted header">Disclaimer</h5>
-                    <p class="instruction disclaimer">
-                        This project is experimental. Do not send any <span class="notranslate">ETC</span> you cannot
-                        afford to
-                        lose. There is zero guarantee
-                        that you will make <span class="notranslate">ETC</span>. This is very new technology and we
-                        kindly ask
-                        anyone who doesn't grasp the risks inherent to Blockchain technology to not participate in Commonwealth.
-                        The
-                        contract is running <a style="color: orange;" target="_blank" href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts">here</a>
-                        and cannot be changed. Don't trust, verify.
-                    </p>
+                    <h5 class="ui inverted header">Предупреждение</h5>
+                    <p class="instruction disclaimer">Данный проект является эксперементальным. Это совершенно новая технология и мы просим всех, кто не понимает риски присущие технологии blockchain не принимать участие в проекте Commonwealth. Не отправляйте ETC, если не можете позволить потерю. Существует нулевая гарантия на возврат или умножение ETC. Контракт не изменнен. Не доверяйте, просто <span class="notranslate"></span><span class="notranslate"></span><a style="color: orange;" target="_blank" href="https://blockscout.com/etc/mainnet/address/0xde6fb6a5adbe6415cdaf143f8d90eb01883e42ac/contracts">проверьте.</a></p>
                 </div>
             </div>
         </div>
@@ -309,10 +291,15 @@
 
     <script src="https://commonwealth.gg/lib/util.js"></script>
     <script src="https://commonwealth.gg/lib/contracts.js"></script>
-    <script src="https://commonwealth.gg/lib/pure/pure.js"></script>
+    <script src="https://commonwealth.gg/lib/pure/pure.js"></script><div class="alertify ajs-hidden  ajs-movable ajs-closable ajs-pinnable ajs-pulse"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset"></button><div class="ajs-commands"><button class="ajs-pin"></button><button class="ajs-maximize"></button><button class="ajs-close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button ajs-ok">OK</button><button class="ajs-button ajs-cancel">Cancel</button></div></div><div class="ajs-handle"></div><button class="ajs-reset"></button></div></div></div>
     <script src="https://commonwealth.gg/lib/pure/rainmaker.js"></script>
     <script src="https://commonwealth.gg/lib/masternode.js"></script>
     <script src="https://commonwealth.gg/lib/pure/use.js"></script>
+
+<source src="/doc-assets/register.mp3" type="audio/mpeg">
+<div id="sound"></div>
+
+<div class="alertify-notifier ajs-bottom ajs-right"></div>
 </body>
 <source src="/doc-assets/register.mp3" type="audio/mpeg">
 <div id="sound"></div>
