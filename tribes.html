@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@commonwealthgg" />
+        <meta name="twitter:title" content="Commonwealth Tribes" />
+        <meta name="twitter:description" content="Grow your tribe and gain virtual followers!"/>
+        <meta name="twitter:image" content="https://commonwealth.gg/img/tribes/civilization.jpg"/>
+        <meta property="og:url" content="https://commonwealth.gg/tribes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Commonwealth" />
+        <title>Tribes</title>
+        <meta charset="utf8">
+        <meta name="description" content="The Commonwealth pure wallet interface. Useful for exchanges, developers, and merchants.">
+        <meta name="keywords" content="Payments, Payment Processing, Live Streaming, ETC Dapps,Ethereum Classic, ETC, Universal Basic Income Dapp, UBI Dapp, UBI Ethereum, Universal Basic income Ethereum, Employment Insurance, Blockchain Insurance, Coops, Cooperative, Blockchain, Blockchain Technology,Savings Fund, P3C, Commonwealth.gg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/lib/semantic.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/lib/alertify.min.css" />
+        <link rel="stylesheet" href="css/lib/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="css/lib/responsive.dataTables.min.css">    
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/tribes.css">
+        <link rel="icon" type="image/png" href="img/tribes/moai.png">
+        <!-- GA -->
+        <meta name="google-site-verification" content="ZDl3q34Gq9Ct8J5T4o7FxNohH0fHqnGFAv4pZCoftos" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141280467-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-141280467-1');
+        </script>
+    </head>
+    <body>
+        <div class="ui large inverted stackable menu gradient emerald" style="border-radius:0px !important;">
+            <div class="ui container">
+                <a class="header item" href="/tribes.html">
+                    <img src="img/tribes/moai.png" style="height: 45px;" ui="" mini="" image"="">
+                    <h2 class="title">Commonwealth Tribes</h2>
+                </a>
+                <div class="right menu">
+                    <div class="item">
+                        <a href="/index.html">
+                            <div class="opacity">
+                                <strong>Главная</strong>
+                            </div>
+                        </a>
+                        <a href="/tribes.html">
+                            <div class="opacity">
+                                <strong>
+                                    <i class="users icon"></i>
+                                </strong>
+                                Всего кланов: <span id="tribeNumber">50</span>
+                            </div>
+                        </a>
+                        <div class="opacity">
+                            <a href="https://pro.coinbase.com/trade/ETC-USD" style="color: white" target="_blank"><strong>
+                                <span>Цена ETC:&nbsp;</span>
+                            </strong>
+                            $<span id="price">7.16</span>
+                            </a>
+                        </div>
+                        <div class="opacity">
+                            <a href="/use.html" style="color: white" target="_blank">Кошелек</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui container margin top two">
+            <div class="ui stackable grid">
+                <div class="sixteen wide column border right border left" style="background: rgba(58, 150, 139, 0.17);">
+                    <h1 class="ui header">
+                        <div class="content">Список доступных кланов</div></h1>
+                    <div id="tribes_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="tribes_length"><label>Показывать<select name="tribes_length" aria-controls="tribes" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>позиций</label></div><div id="tribes_filter" class="dataTables_filter"><label>Поиск<input type="search" class="" placeholder="" aria-controls="tribes"></label></div><table id="tribes" class="display dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="tribes_info" style="width: 1125px;">
+                        <thead>
+                            <tr role="row"><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 58px;" aria-label="Tribe: activate to sort column ascending">Tribe</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 180px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 70px;" aria-label="Joined: activate to sort column ascending">Joined</th><th class="sorting_desc" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 118px;" aria-sort="descending" aria-label="Power Level: activate to sort column ascending">Power Level</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 79px;" aria-label="Cost: activate to sort column ascending">Cost</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 48px; display: none;" aria-label="Size: activate to sort column ascending">Size</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 67px; display: none;" aria-label="Age: activate to sort column ascending">Age</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 91px; display: none;" aria-label="Reward: activate to sort column ascending">Reward</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 90px; display: none;" aria-label="Creator: activate to sort column ascending">Creator</th></tr>
+                        </thead>
+                    <tbody><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=42#">42</a></td><td><a href="/tribe.html?id=42#">CommonWealth Whales</a></td><td>⭕</td><td class="sorting_1">50000</td><td>25 ETC</td><td style="display: none;">2 / 4</td><td style="display: none;">2 days</td><td style="display: none;">1541.1 P3C</td><td style="display: none;">0xe1ad43...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=29#">29</a></td><td><a href="/tribe.html?id=29#">A Tribe Called Quest</a></td><td>⭕</td><td class="sorting_1">8000</td><td>4 ETC</td><td style="display: none;">2 / 11</td><td style="display: none;">5 days</td><td style="display: none;">247.9 P3C</td><td style="display: none;">0xB460ce...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=26#">26</a></td><td><a href="/tribe.html?id=26#">One Large Tribe </a></td><td>⭕</td><td class="sorting_1">4000</td><td>1 ETC</td><td style="display: none;">4 / 20</td><td style="display: none;">4 days</td><td style="display: none;">62 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=44#">44</a></td><td><a href="/tribe.html?id=44#">bounty hunter</a></td><td>⭕</td><td class="sorting_1">3000</td><td>1 ETC</td><td style="display: none;">3 / 4</td><td style="display: none;">30 hours</td><td style="display: none;">61.6 P3C</td><td style="display: none;">0xe1ad43...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=39#">39</a></td><td><a href="/tribe.html?id=39#">Ubuntu </a></td><td>⭕</td><td class="sorting_1">2000</td><td>2 ETC</td><td style="display: none;">1 / 6</td><td style="display: none;">3 days</td><td style="display: none;">123.9 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=48#">48</a></td><td><a href="/tribe.html?id=48#">Baby Tribe (One on One)</a></td><td>⭕</td><td class="sorting_1">1000</td><td>1 ETC</td><td style="display: none;">1 / 2</td><td style="display: none;">15 hours</td><td style="display: none;">61.6 P3C</td><td style="display: none;">0xb460ce...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=35#">35</a></td><td><a href="/tribe.html?id=35#">Final Frontier </a></td><td>⭕</td><td class="sorting_1">1000</td><td>1 ETC</td><td style="display: none;">1 / 5</td><td style="display: none;">4 days</td><td style="display: none;">62 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=25#">25</a></td><td><a href="/tribe.html?id=25#">Barry Silbert's Tribe</a></td><td>⭕</td><td class="sorting_1">1000</td><td>0.2 ETC</td><td style="display: none;">5 / 10</td><td style="display: none;">4 days</td><td style="display: none;">12.4 P3C</td><td style="display: none;">0x39a905...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=32#">32</a></td><td><a href="/tribe.html?id=32#">Ocho</a></td><td>⭕</td><td class="sorting_1">800</td><td>0.8 ETC</td><td style="display: none;">1 / 8</td><td style="display: none;">4 days</td><td style="display: none;">49.6 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=36#">36</a></td><td><a href="/tribe.html?id=36#">The 11th tribe</a></td><td>⭕</td><td class="sorting_1">330</td><td>0.11 ETC</td><td style="display: none;">3 / 11</td><td style="display: none;">4 days</td><td style="display: none;">6.8 P3C</td><td style="display: none;">0x76f3a4...</td></tr></tbody></table><div class="dataTables_info" id="tribes_info" role="status" aria-live="polite">Показано 10 из 16</div><div class="dataTables_paginate paging_simple_numbers" id="tribes_paginate"><a class="paginate_button previous disabled" aria-controls="tribes" data-dt-idx="0" tabindex="0" id="tribes_previous">Предыдущая</a><span><a class="paginate_button current" aria-controls="tribes" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="tribes" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="tribes" data-dt-idx="3" tabindex="0" id="tribes_next">Следующая</a></div></div>
+                </div>
+            </div>
+            <div style="background-color: #eee; height: 1px; margin-top:20px; margin-bottom:20px;"></div>
+
+            <div class="ui stackable grid">
+
+                <div class="eight wide column">
+                    <div class="ui segments">
+                            <div class="ui segment">
+                                <h2 class="ui header">
+                                    <div class="content">
+                                        <span>Создать новый клан</span>
+                                    </div>
+                                </h2>
+                                <form>
+                                    <div class="ui right labeled left icon input fluid large buy">
+                                      <i class="tag green icon"></i>
+                                      <input type="text" id="tribeName" placeholder="Max 32">
+                                      <div class="ui tag teal label notranslate">Название</div>
+                                    </div>
+                                    <br>
+                                    <div class="ui right labeled left icon input fluid large buy">
+                                      <i class="ethereum green icon"></i>
+                                      <input type="text" id="entryCost" placeholder="Min .001 ETC">
+                                      <div class="ui tag green label notranslate">ETC</div>
+                                    </div>
+                                <br>
+                                
+                                <div class="ui right labeled left icon input fluid large buy">
+                                    <i class="users green icon"></i>
+                                    <input type="text" id="amountOfMembers" placeholder="Min. 2">
+                                    <div class="ui tag blue label notranslate">Кол-во участников</div>
+                                </div>
+                                    
+                                    <div>
+                                        <span id="tribeAddress"></span>
+                                    </div>
+                                
+                                <a href="#" id="createTribe" class="ui large fluid green button" style="margin-top:10px;">Создать</a>
+                            </form></div>
+                    </div>
+                </div>
+
+                <div class="eight wide column">
+                    <div style="text-align: center">
+                        <a href="https://discord.gg/crjsdJr" target="_blank" class="ui left labeled icon large fluid green button">
+                            <i class="left discord icon"></i>Чтобы задать вопрос присоеденитесь к чату</a>
+                    </div>
+                    <div class="ui segments">
+                        <div class="ui segment">
+                                <h4 style="">Q: Как работает эта игра?</h4>
+                                <h4 style="text-align: left">
+                                    <p>Целью игры является снижение рисков при совместном инвестировании.</p>
+                                    
+                                </h4>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/semantic.min.js"></script>
+        <script src="lib/jquery.dataTables.min.js"></script>
+        <script src="lib/dataTables.responsive.min.js"></script>
+        <script src="lib/alertify.min.js"></script>
+        
+        <script src="js/util.js"></script>
+        <script src="js/etc/contracts.js"></script>
+        <script src="js/etc/tribes/tribe.js"></script>
+        <script src="js/etc/tribes/lobby.js"></script>
+
+        <script>
+            function refreshPrice() {
+                $.getJSON('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=USDT', function (json) {
+                    var USETC = JSON.parse(JSON.stringify(json)).USDT;
+                    var price = (USETC).toFixed(2);
+                    $("#price").text(price)
+                });
+            }
+            setTimeout(function () {
+                refreshPrice()
+            }, 2000);
+            setInterval(function () {
+                refreshPrice() // this will run after every 5 seconds
+            }, 12000);
+    </script>
+</body>
+
+</html>
