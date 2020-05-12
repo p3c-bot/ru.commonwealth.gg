@@ -73,14 +73,35 @@
         </div>
         <div class="ui container margin top two">
             <div class="ui stackable grid">
+                <div class="ui selection dropdown" style="margin-bottom: 10px;">
+                    <input type="hidden" name="tribes">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Show Tribes</div>
+                    <div class="menu">
+                      <div class="item" data-value="0">Active Tribes</div>
+                      <div class="item" data-value="1">My Tribes</div>
+                      <div class="item" data-value="2">Completed Tribes</div>
+                    </div>
+                  </div>
                 <div class="sixteen wide column border right border left" style="background: rgba(58, 150, 139, 0.17);">
                     <h1 class="ui header">
-                        <div class="content">Список доступных кланов</div></h1>
-                    <div id="tribes_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="tribes_length"><label>Показывать<select name="tribes_length" aria-controls="tribes" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> позиций</label></div><div id="tribes_filter" class="dataTables_filter"><label>Поиск:<input type="search" class="" placeholder="" aria-controls="tribes"></label></div><table id="tribes" class="display dataTable no-footer dtr-inline collapsed" role="grid" aria-describedby="tribes_info" style="width: 1125px;">
+                        <div id="title" class="content">Active Tribes
+                    </h1>
+                    <table id="tribes" class="display">
                         <thead>
-                            <tr role="row"><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 58px;" aria-label="Tribe: activate to sort column ascending">Клан</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 180px;" aria-label="Name: activate to sort column ascending">Название</th><th class="sorting_asc" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 70px;" aria-label="Joined: activate to sort column descending" aria-sort="ascending">Статус</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 118px;" aria-label="Power Level: activate to sort column ascending">Уровень силы</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 79px;" aria-label="Cost: activate to sort column ascending">Взнос</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 48px;" aria-label="Size: activate to sort column ascending">Размер</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 67px;" aria-label="Age: activate to sort column ascending">Срок</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 91px; display: none;" aria-label="Reward: activate to sort column ascending">Награда</th><th class="sorting" tabindex="0" aria-controls="tribes" rowspan="1" colspan="1" style="width: 90px; display: none;" aria-label="Creator: activate to sort column ascending">Создатель</th></tr>
+                            <tr>
+                                <th>Tribe</th>
+                                <th>Name</th>
+                                <th>Joined</th>
+                                <th>Power Level</th>
+                                <th>Cost</th>
+                                <th>Size</th>
+                                <th>Age</th>
+                                <th>Reward</th>
+                                <th>Creator</th>
+                            </tr>
                         </thead>
-                    <tbody><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=42#">42</a></td><td style=""><a href="/tribe.html?id=42#">CommonWealth Whales</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">50000</td><td style="">25 ETC</td><td style="">2 / 4</td><td style="">2 days</td><td style="display: none;">1541.1 P3C</td><td style="display: none;">0xe1ad43...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=29#">29</a></td><td style=""><a href="/tribe.html?id=29#">A Tribe Called Quest</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">8000</td><td style="">4 ETC</td><td style="">2 / 11</td><td style="">5 days</td><td style="display: none;">247.9 P3C</td><td style="display: none;">0xB460ce...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=26#">26</a></td><td style=""><a href="/tribe.html?id=26#">One Large Tribe </a></td><td class="sorting_1" style="">⭕</td><td class="" style="">4000</td><td style="">1 ETC</td><td style="">4 / 20</td><td style="">4 days</td><td style="display: none;">62 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=44#">44</a></td><td style=""><a href="/tribe.html?id=44#">bounty hunter</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">3000</td><td style="">1 ETC</td><td style="">3 / 4</td><td style="">31 hours</td><td style="display: none;">61.6 P3C</td><td style="display: none;">0xe1ad43...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=39#">39</a></td><td style=""><a href="/tribe.html?id=39#">Ubuntu </a></td><td class="sorting_1" style="">⭕</td><td class="" style="">2000</td><td style="">2 ETC</td><td style="">1 / 6</td><td style="">3 days</td><td style="display: none;">123.9 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=48#">48</a></td><td style=""><a href="/tribe.html?id=48#">Baby Tribe (One on One)</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">1000</td><td style="">1 ETC</td><td style="">1 / 2</td><td style="">16 hours</td><td style="display: none;">61.6 P3C</td><td style="display: none;">0xb460ce...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=35#">35</a></td><td style=""><a href="/tribe.html?id=35#">Final Frontier </a></td><td class="sorting_1" style="">⭕</td><td class="" style="">1000</td><td style="">1 ETC</td><td style="">1 / 5</td><td style="">4 days</td><td style="display: none;">62 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=25#">25</a></td><td style=""><a href="/tribe.html?id=25#">Barry Silbert's Tribe</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">1000</td><td style="">0.2 ETC</td><td style="">5 / 10</td><td style="">4 days</td><td style="display: none;">12.4 P3C</td><td style="display: none;">0x39a905...</td></tr><tr role="row" class="odd"><td tabindex="0"><a href="/tribe.html?id=32#">32</a></td><td style=""><a href="/tribe.html?id=32#">Ocho</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">800</td><td style="">0.8 ETC</td><td style="">1 / 8</td><td style="">4 days</td><td style="display: none;">49.6 P3C</td><td style="display: none;">0x76f3a4...</td></tr><tr role="row" class="even"><td tabindex="0"><a href="/tribe.html?id=36#">36</a></td><td style=""><a href="/tribe.html?id=36#">The 11th tribe</a></td><td class="sorting_1" style="">⭕</td><td class="" style="">330</td><td style="">0.11 ETC</td><td style="">3 / 11</td><td style="">4 days</td><td style="display: none;">6.8 P3C</td><td style="display: none;">0x76f3a4...</td></tr></tbody></table><div class="dataTables_info" id="tribes_info" role="status" aria-live="polite">Показано 10 из 16</div><div class="dataTables_paginate paging_simple_numbers" id="tribes_paginate"><a class="paginate_button previous disabled" aria-controls="tribes" data-dt-idx="0" tabindex="0" id="tribes_previous">Предыдущая</a><span><a class="paginate_button current" aria-controls="tribes" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="tribes" data-dt-idx="2" tabindex="0">2</a></span><a class="paginate_button next" aria-controls="tribes" data-dt-idx="3" tabindex="0" id="tribes_next">Следующая</a></div></div>
+                    </table>
                 </div>
             </div>
             <div style="background-color: #eee; height: 1px; margin-top:20px; margin-bottom:20px;"></div>
@@ -147,16 +168,16 @@
                 </div>
             </div>
         </div>
-        <script src="lib/jquery.min.js"></script>
-        <script src="lib/semantic.min.js"></script>
-        <script src="lib/jquery.dataTables.min.js"></script>
-        <script src="lib/dataTables.responsive.min.js"></script>
-        <script src="lib/alertify.min.js"></script>
+        <script src="https://commonwealth.gg/lib/jquery.min.js"></script>
+        <script src="https://commonwealth.gg/lib/semantic.min.js"></script>
+        <script src="https://commonwealth.gg/lib/jquery.dataTables.min.js"></script>
+        <script src="https://commonwealth.gg/lib/dataTables.responsive.min.js"></script>
+        <script src="https://commonwealth.gg/lib/alertify.min.js"></script>
         
-        <script src="js/util.js"></script>
-        <script src="js/etc/contracts.js"></script>
-        <script src="js/etc/tribes/tribe.js"></script>
-        <script src="js/etc/tribes/lobby.js"></script>
+        <script src="https://commonwealth.gg/js/util.js"></script>
+        <script src="https://commonwealth.gg/js/etc/contracts.js"></script>
+        <script src="https://commonwealth.gg/js/etc/tribes/tribe.js"></script>
+        <script src="https://commonwealth.gg/js/etc/tribes/lobby.js"></script>
 
         <script>
             function refreshPrice() {
