@@ -322,18 +322,44 @@
                         Чтобы задать вопрос присоеденитесь к чату
                     </a>
                 </div>
-                    <div class="ui segments transfer">
+                    <div id="masternode" class="ui segments masternode hidden">
+                        <div class="ui segment" style="text-align: left;">
+                            <p style="margin-bottom: 4px;">
+                                <strong>33%</strong> Commonwealth начисляет в качестве дивидендов при использовании реферальной ссылки.<a href="https://medium.com/@masterhax/how-do-referral-links-work-in-p3c-13c8242fd9d9" target="_blank"> Узнать детали.</a>
+                            </p>
+                            <div id="refDivs" style="text-align: center;">Реферальные дивиденды: <span id="myRefDividends"></span></div> 
+                        </div>
+                    </div>
+                    <div style="text-align: center;  margin-top: 15px;">
+                        <a id="copyMNButton" data-clipboard-text="" class="ui left labeled icon large fluid green button copy"
+                            style="margin-bottom:10px;"> <i class="left magic icon"></i>
+                            Получить реферальную ссылку!
+                        </a>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a id="transferOpen" class="ui left labeled icon large fluid green button" style="margin-bottom:10px;">
+                        <i class="left qrcode icon"></i>
+                            Отправить или получить токены.
+                        </a>
+                    </div>
+                    <div class ="ui segment">
+                        <div id="autoReinvest" class="ui toggle checkbox reinvest" style="margin-top: 0px; padding-top: 0px; top: 7px;">
+                            <input type="checkbox" name="public"></div><label id="reinvestToggle" for="autoReinvest">Auto Compound <i id="infoButton" class="info circle icon"></i></label>                    
+                        </div>
+                    </div>
+                    <div class="ui segments small modal" style="margin: 0px;">
                             <div class="ui segment">
                                 <h4 class="ui header">
-                                    <i class="circular inverted blue exchange alternate icon"></i>
+                                    <i class="circular inverted green exchange alternate icon"></i>
                                     <div class="content">
-                                        <div class="sub header"><b>Трансфер Point</b>. <i>Только на crop-address (см. ниже) или</i>
+                                        <div class="sub header"><b>Трансфер Point</b>. <i>Примечание: При переводе средств, дивиденды зачисляются на кошелек автоматически. Транзакции возможны только на crop-address (см. ниже) или</i>
                                           <a href="https://ru.commonwealth.gg/pure" target="_blank">Pure-кошелек.</a></div>
                                     </div>
                                 </h4>
                             </div>
-                            <div class="ui segment notranslate">
-                                <b>My Crop:</b> <span id="myCropAddress" class="approx"></span> <button id="copyAddressButton" class="ui primary basic button copy" data-clipboard-text="">
+                            <div class="ui segment notranslate" style="color: black !important;">
+                                <b>My Crop:  </b> <span id="myCropAddress"></span> <button id="copyAddressButton"
+                                    class="ui primary basic button copy" data-clipboard-text="">
                                     <i class="copy icon"></i>
                                 </button>
                             </div>
@@ -346,18 +372,50 @@
                             </div>
                             <div class="ui segment">
                                 <div class="ui right labeled left icon input fluid buy">
-                                    <input type="text" id="transferTokenCount" placeholder="Количество токенов">
+                                    <input type="text" id="transferTokenCount" placeholder="Кол-во токенов">
                                     <div class="ui tag teal label notranslate">
                                         Points
                                     </div>
                                 </div>
                             </div>
                             <div class="ui segment">
-                                <button id="transfer" class="ui right labeled large icon teal fluid button" disabled="">
+                                <button id="transfer" class="ui right labeled large icon teal fluid button">
                                     <i class="right arrow icon"></i>
                                     Отправить
                                 </button>
                             </div>
+                    <div class="ui segment">
+                        <div id="qrReader" hidden>
+                            <canvas id="canvas"></canvas>
+                            <button class="ui icon green button float" id="closeVideo">
+                                <i class="window close icon"></i>
+                            </button>
+                        <div id="output" hidden></div>
+                        </div>
+                        <div id="gatherQr">
+                            <div class="ui two column very relaxed grid">
+                            <div class="column">
+                                <div class ="ui center aligned segment">
+                                        <a id="activateReader" class="ui left labeled icon large fluid green button" style="margin-bottom:10px;">
+                                        <i class="left camera icon"></i>
+                                            Сканировать QR-код
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="column">
+                                <div id="qrcode"></div>
+                            </div>
+                            </div>
+                            <div class="ui vertical divider">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <br>
                             <div class="ui segment">
                                 <div id="autoReinvest" class="ui toggle checkbox reinvest" style="margin-top: 0px; padding-top: 0px; top: 7px;">
                                     <input type="checkbox" name="public"></div><label id="reinvestToggle" for="autoReinvest">Автоматическое начисление дивидендов<i id="infoButton" class="info circle icon"></i></label>                    
