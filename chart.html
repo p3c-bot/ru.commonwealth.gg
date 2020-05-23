@@ -346,15 +346,57 @@
                                 <!-- TradingView Widget END -->
                             </div>
                         </div>
-                        <div class="column" style="padding-bottom: 0px !important;">
-                            <div id="sizeStats" class="ui segments">
-                                <a href="https://youtu.be/PuQBHfKVF2I" target="_blank">
+                        <div class="column">
+                            <div class="ui segments">
                                 <div class="ui segment">
-                                    <h4 style="margin-bottom: 0px;">Начните использовать со своего смартфона<i class="right arrow icon"></i></h4>
-                                    <img class="logo mobile only" style="height: 75%" src="/img/landing/phone.png" alt="Phoenix">
-                                    <img class="logo custom-computer only" src="/img/landing/phone.png" alt="Phoenix">
+                                    <h4 class="ui header">
+                                        <i class="circular inverted green tachometer alternate icon"></i>
+                                        <div class="content">
+                                            <div class="sub header"><b>Калькулятор финансовой независимости. </b><i>Рассчитайте заранее!</i></div>
+                                        </div>
+                                    </h4>
                                 </div>
-                                </a>
+                                <div class="ui segment" style="color: black !important;">
+                                    При взносе $ <span class="ui input">
+                                        <input id="possibleInvestment" type="text" placeholder="Dollars" size="7">
+                                    </span> <span id="inputETC" class="" style="">(114.18 ETC)</span>
+                                    <br>
+                                    в Commonwealth на
+                                    <span id="timeFrame" class="ui selection dropdown" tabindex="0">
+                                        <input>
+                                        <i class="dropdown icon"></i>
+                                        <div style="font-size: 1em;">
+                                            <span class="ui green text"><span id="numDays">180 дней</span></span>
+                                        </div>
+                                        <div class="menu" tabindex="-1">
+                                          <div class="item" data-value="30">30 дней</div>
+                                          <div class="item" data-value="90">90 дней</div>
+                                          <div class="item" data-value="180">6 месяцев</div>
+                                          <div class="item" data-value="365">1 год</div>
+                                          <div class="item" data-value="100000">Max</div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="ui segment">
+                                    • Ваш <b>доход </b> составит $<span id="myPossibleValue" class="green" style="">662.71</span>, в соответствии с котировками на сегодня. <span id="myPossibleIncrease" class="green">(+33%)</span>
+                                </div>
+                                <div id="possibleDividends" class="ui segment">
+                                    • Дивидендные выплаты <b> </b> <span id="myPossibleDividendsUSD" class="" style="">$29.07</span>  <span id="myPossibleDividends">(4.45 ETC)</span>.
+                                </div>
+                                <div class="ui segment">
+                                    • Процентр принадлежавших токенов от общей эмиссии <b> </b> <span id="myPossiblePercentage" class="" style="">0.4422%</span> 
+                                </div>
+                                <div class="ui segment">
+                                    <a href="/use.html">
+                                    <button id="transfer" class="ui right labeled large icon teal fluid button">
+                                        <i class="right arrow icon"></i>
+                                        Начать
+                                    </button>
+                                    </a>
+                                </div>
+                                <div class="ui segment">
+                                    <i>Расчет производится на основании текущих показателей Commonwealth. Прошлые показатели не гарантируют будущих результатов.</i>
+                                </div>
                             </div>
                         </div>
                     </div>
