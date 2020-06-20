@@ -40,20 +40,23 @@
     <div class="ui large inverted stackable menu gradient personal" style="border-radius:0px !important;">
         <div class="ui container">
             <div class="header">
-                <div class="item">
-                    <img id="logo" src="img/logo.svg" class="ui mini image home" style="margin-right:10px;" />
-                    <h2 class="title home custom-computer only">Commonwealth</h2>
+                <div class="item" style="padding-top: 10px; padding-bottom: 5px;">
+                    <img id="logo" src="img/new-logo/white-logo-plain.png" class="custom-computer only ui image home" style="width: 8%;">
+                    <img id="logo" src="img/new-logo/white-logo-plain.png" class="mobile only ui image home" style="margin-right:10px; width: 12%;">
+                    <!-- <h2 class="title home custom-computer only">ru.Commonwealth.gg</h2> -->
                     <div class="opacity mobile only home">
                         <strong>
                             <i class="chess rook icon"></i>
                         </strong>
-                        <span id="etcInContract">0</span>
+                        12,011 ETC
                     </div>
+                    <span class="right menu mobile only">
                         <select id="language">
-                                <option value="ru">🇷🇺&emsp;RU</option>
-                                <option value="en">🇬🇧&emsp;EN</option>
-                                <option value="id">🇮🇩&emsp;ID</option>
-                        </select>
+                            <option value="en">🇬🇧&emsp;EN</option>
+                            <option value="ru">🇷🇺&emsp;RU</option>
+                            <option value="id">🇮🇩&emsp;ID</option>
+                            </select>
+                    </span>
                 </div>
             </div>
             <div class="right menu custom-computer only">
@@ -151,7 +154,7 @@
                             <div class="sub header notranslate">
                                 <span id="myTokensValue" class="converted" style="font-weight:bold;"></span><span id="myDayChange" class="converted" style="font-weight:bold;"></span>
                                 <div class="ui teal text small eleven">
-                                    <span id="myCropTokens" class="count"></span> Points<span class="custom-computer only"> / <span id="myETCValue" class="notranslate" style="font-weight:bold;"></span> ETC</span>
+                                    <span id="myCropTokens" class="count"></span> WLTH<span class="custom-computer only"> / <span id="myETCValue" class="notranslate" style="font-weight:bold;"></span> ETC</span>
                                 </div>
                             </div>
                         </h2>
@@ -195,7 +198,7 @@
                         <span>Покупка</span>
                         <span class="ui green text small">&nbsp;| </span>
                         <div class="sub header">
-                            <strong>Point</strong></div>
+                            <strong>WLTH</strong></div>
                     </div>
                 </h2>
 
@@ -219,7 +222,7 @@
                     </div>
                 </div>
                 <button id="buy" class="ui large fluid green button" style="margin-top:10px;" disabled="">
-                    Купить Point
+                    Купить WLTH
                 </button>
                 <div id="buyAmount" class="ui fluid large basic green button approx no click buy-amount">
                     <i>Количество токенов к покупке</i>
@@ -231,7 +234,7 @@
                     <div class="content">
                         <span>Продажа</span>
                         <span class="ui text blue small">&nbsp;| </span>
-                        <div class="sub header">Point</div>
+                        <div class="sub header">WLTH</div>
                     </div>
                 </h2>
 
@@ -253,11 +256,11 @@
                     <i class="tree blue icon"></i>
                     <input placeholder="..." type="text" id="sellInput">
                     <span class="ui tag blue label">
-                        Points
+                        WLTH
                     </span>
                 </div>
                 <button id="sell" class="ui large fluid blue button" style="margin-top:10px;" disabled="">
-                    Продать Point
+                    Продать WLTH
                 </button>
                 <div id="sellAmount" class="ui fluid large basic blue button no click approx" style="margin-top:10px;">
                     <i>Количество токенов к продаже</i>
@@ -339,7 +342,7 @@
                                 <h4 class="ui header">
                                     <i class="circular inverted green exchange alternate icon"></i>
                                     <div class="content">
-                                        <div class="sub header"><b>Трансфер Point</b>. <i>Примечание: При переводе средств, дивиденды зачисляются на кошелек автоматически. Транзакции возможны только на crop-address (см. ниже) или</i>
+                                        <div class="sub header"><b>Трансфер WLTH</b>. <i>Примечание: При переводе средств, дивиденды зачисляются на кошелек автоматически. Транзакции возможны только на crop-address (см. ниже) или</i>
                                           <a href="https://ru.commonwealth.gg/pure" target="_blank">Pure-кошелек.</a></div>
                                     </div>
                                 </h4>
@@ -361,7 +364,7 @@
                                 <div class="ui right labeled left icon input fluid buy">
                                     <input type="text" id="transferTokenCount" placeholder="Кол-во токенов">
                                     <div class="ui tag teal label notranslate">
-                                        Points
+                                        WLTH
                                     </div>
                                 </div>
                             </div>
@@ -412,6 +415,7 @@
                         <a class="dashboard-link item" href="/use.html">Кошелек</a>
                         <a href="/chart.html" class="item">Чарт</a>
                         <a href="https://p3c.io/commonwealth.pdf" target="_blank" class="item">White Paper</a>
+                        <a href="/design.html" class="item">Дизайн</a>
                         <a href="https://github.com/p3c-bot/p3c-bot.github.io" target="_blank" class="item"><i class="github icon"></i>Github</a>
                     </div>
                 </div>
