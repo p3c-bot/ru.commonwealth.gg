@@ -38,17 +38,15 @@
 
         
     <div class="ui large inverted stackable menu gradient personal" style="border-radius:0px !important;">
-        <div class="ui container">
-            <div class="header">
-                <div class="item" style="padding-top: 10px; padding-bottom: 5px;">
-                    <img id="logo" src="https://commonwealth.gg/img/new-logo/white-logo-plain.png" class="custom-computer only ui image home" style="width: 8%;">
-                    <img id="logo" src="https://commonwealth.gg/img/new-logo/white-logo-plain.png" class="mobile only ui image home" style="margin-right:10px; width: 12%;">
+           <div class="item" style="padding-top: 10px; padding-bottom: 5px;">
+                    <img id="logo" src="img/new-logo/white-logo-plain.png" class="custom-computer only ui image home" style="width: 8%;" />
+                    <img id="logo" src="img/new-logo/white-logo-plain.png" class="mobile only ui image home" style="margin-right:10px; width: 12%;" />
                     <!-- <h2 class="title home custom-computer only">Commonwealth.gg</h2> -->
                     <div class="opacity mobile only home">
                         <strong>
                             <i class="chess rook icon"></i>
                         </strong>
-                        12,011 ETC
+                        <span id="etcInContract">0</span>
                     </div>
                     <span class="right menu mobile only">
                         <select id="language">
@@ -68,11 +66,10 @@
                         </strong>
                         <span id="tokensInCirculation">0.0</span>
                     </div> -->
-                    <a href="/index.html">
-                        <div class="opacity">
-                            <strong>Главная
-                            </strong>
-                        </div>
+                    <a>
+                    <div id="changeNetwork" class="opacity">
+                        Сеть: <strong>ETC</strong>
+                    </div>
                     </a>
                     <a href="/games.html">
                         <div class="opacity">
@@ -100,7 +97,7 @@
                             <option value="ru">🇷🇺&emsp;RU</option>
                             <option value="id">🇮🇩&emsp;ID</option>
                             </select>
-                     </span>
+                    </span>
                 </div>
             </div>
         </div>
